@@ -1,0 +1,85 @@
+:root {
+  --primary: #db4a2b;
+  --background: #ffffff;
+  --text: #0f172a;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter button {
+  width: 32px;
+  height: 32px;
+  font-size: 1.25rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter #counterValue {
+  font-size: 1.25rem;
+  width: 32px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Template",
+  "version": "1.0.0",
+  "description": "A modern Chrome extension template",
+  "permissions": ["activeTab", "tabs"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/logo16.png",
+      "48": "images/logo48.png",
+      "128": "images/logo128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}
